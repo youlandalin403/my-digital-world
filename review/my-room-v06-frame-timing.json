@@ -1,0 +1,7 @@
+{
+  "context": "Headless Edge, stationary storage view, 120 requestAnimationFrame intervals; not a GPU benchmark or v0.5 comparison",
+  "samples": 120,
+  "medianMs": 16.699999999999818,
+  "p95Ms": 16.899999999999636,
+  "meanMs": 16.66583333333333
+}

@@ -1,0 +1,32 @@
+{
+  "name": "my-digital-world",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test src/projects/projectSchema.test.js src/world-map/mapState.test.js src/services/observatory/date.test.js src/constellation/tree.test.js src/services/guestbook/service.test.js supabase/tests/daily.test.js supabase/tests/constellation.test.js supabase/tests/guestbook.test.js src/services/diary/service.test.js supabase/tests/diary.test.js src/my-room/room.test.js src/services/guest-pass/service.test.js supabase/tests/guest-pass.test.js supabase/tests/guest-pass-edge.test.js src/services/observatory/owner.test.js",
+    "test:browser": "playwright test",
+    "test:postgres-concurrency": "node --test supabase/tests/guest-pass-concurrency.test.js",
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.0",
+    "@react-three/fiber": "^9.3.0",
+    "@supabase/supabase-js": "^2.117.2",
+    "d3-hierarchy": "^3.1.2",
+    "lucide-react": "^1.48.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-markdown": "^10.1.0",
+    "three": "^0.180.0",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@playwright/test": "^1.63.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.1.0"
+  }
+}

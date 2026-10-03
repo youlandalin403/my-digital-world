@@ -1,0 +1,42 @@
+.observatory-page { height: 100%; overflow: auto; background: #fafafa; color: #242424; font: 16px/1.5 Arial, sans-serif; letter-spacing: 0; padding: 24px; }
+.daily-container { max-width: 760px; margin: 0 auto; padding-bottom: 48px; }
+.observatory-page h1 { font: 400 28px/1.2 Arial, sans-serif; letter-spacing: 0; text-shadow: none; margin: 32px 0 24px; }
+.observatory-page h2 { font-size: 18px; margin: 0 0 16px; }
+.observatory-page section { border-top: 1px solid #ddd; padding: 24px 0; }
+.observatory-page button, .observatory-page input, .observatory-page textarea, .observatory-page select { font: inherit; color: inherit; letter-spacing: 0; }
+.observatory-page button, .observatory-page select { border: 1px solid #bdbdbd; border-radius: 4px; background: #fff; min-height: 40px; padding: 6px 12px; }
+.observatory-page button, .daily-header a { display: inline-flex; gap: 8px; align-items: center; justify-content: center; cursor: pointer; }
+.observatory-page button:disabled { opacity: .45; cursor: default; }
+.observatory-page :focus-visible { outline: 2px solid #286c58; outline-offset: 3px; }
+.observatory-page input:not([type=checkbox]), .observatory-page textarea { background: white; border: 1px solid #bdbdbd; border-radius: 4px; padding: 9px; min-width: 0; }
+.observatory-page textarea { width: 100%; resize: vertical; display: block; margin-bottom: 12px; }
+.daily-header, .daily-navigation { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.daily-header { justify-content: space-between; }
+.daily-header a { color: #285e4c; text-decoration: none; }
+.daily-date { display: flex; align-items: center; gap: 10px; }
+.daily-date input { width: 165px; }
+.daily-status { min-height: 44px; padding: 10px 0; color: #555; font-size: 14px; }
+.daily-error { color: #9a2727; margin: 8px 0 20px; }
+.daily-visibility { margin: 12px 0 24px; }
+.daily-visibility select { margin-left: 8px; }
+.daily-tasks { list-style: none; margin: 0 0 16px; padding: 0; }
+.daily-tasks li { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; overflow-wrap: anywhere; }
+.daily-tasks input[type=checkbox] { flex: 0 0 18px; width: 18px; height: 18px; accent-color: #286c58; }
+.daily-task-editor { display: flex; gap: 6px; flex: 1; min-width: 0; }
+.daily-task-editor input { width: 100%; }
+.daily-task-actions { display: flex; gap: 4px; }
+.observatory-page .daily-icon { flex: 0 0 40px; width: 40px; height: 40px; padding: 0; }
+.daily-add { display: flex; gap: 8px; }
+.daily-add input { flex: 1; }
+.daily-add button { flex-shrink: 0; }
+.daily-login { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; margin-bottom: 24px; }
+.daily-login label { flex: 1 1 200px; display: grid; gap: 4px; }
+.is-done { text-decoration: line-through; color: #666; }
+.daily-reflection-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 520px) {
+  .observatory-page { padding: 16px; }
+  .daily-navigation { gap: 6px; }
+  .daily-date { gap: 6px; }
+  .daily-tasks li { flex-wrap: wrap; }
+  .daily-task-actions { width: 100%; justify-content: flex-end; }
+}

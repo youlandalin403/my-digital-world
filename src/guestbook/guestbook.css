@@ -1,0 +1,22 @@
+.guestbook-page { position: fixed; inset: 0; overflow: auto; background: #f3f1eb; color: #283b39; padding: 32px 20px; font-family: system-ui, sans-serif; }
+.guestbook-container { max-width: 760px; margin: auto; }
+.guestbook-page * { box-sizing: border-box; }
+.guestbook-page a { color: #345f64; }
+.guestbook-page h1 { font-size: 30px; }
+.guestbook-page h2 { font-size: 22px; }
+.guestbook-page form, .guestbook-page label { display: grid; gap: 10px; }
+.guestbook-page form { margin: 24px 0; gap: 16px; }
+.guestbook-page input, .guestbook-page textarea, .guestbook-page button { font: inherit; border: 1px solid #879b92; border-radius: 5px; background: #fffef9; color: inherit; padding: 10px 12px; }
+.guestbook-page input, .guestbook-page textarea { width: 100%; min-width: 0; }
+.guestbook-page button { cursor: pointer; }
+.guestbook-page button:disabled { opacity: .5; cursor: default; }
+.guestbook-page :focus-visible { outline: 2px solid #345f64; outline-offset: 3px; }
+.guestbook-page [role=alert] { color: #982c22; }
+.guestbook-toolbar { display: flex; gap: 10px; margin: 12px 0; flex-wrap: wrap; }
+.guestbook-page ol { list-style: none; padding: 0; }
+.guestbook-page article { border-top: 1px solid #c2ccc4; padding: 22px 0; overflow-wrap: anywhere; }
+.guestbook-page article header { display: flex; gap: 12px; flex-wrap: wrap; align-items: baseline; }
+.guestbook-page time { font-size: 13px; }
+.guestbook-message { white-space: pre-wrap; }
+.guestbook-hidden { background: #e1d8bf; padding: 3px 7px; border-radius: 3px; }
+.guestbook-honeypot { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); pointer-events: none; }

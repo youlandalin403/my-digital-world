@@ -1,0 +1,542 @@
+[
+  {
+    "id": "c0000000-0000-4000-8000-000000000001",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "MY INTERESTS",
+    "parent_id": null,
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000002",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Computing",
+    "parent_id": "c0000000-0000-4000-8000-000000000001",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000003",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Web & App Development",
+    "parent_id": "c0000000-0000-4000-8000-000000000002",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000004",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Computer Graphics / 3D",
+    "parent_id": "c0000000-0000-4000-8000-000000000002",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000005",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Game Development",
+    "parent_id": "c0000000-0000-4000-8000-000000000002",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000006",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Software Engineering",
+    "parent_id": "c0000000-0000-4000-8000-000000000002",
+    "description": "",
+    "status": "curious",
+    "sort_order": 3
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000007",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Systems & Infrastructure",
+    "parent_id": "c0000000-0000-4000-8000-000000000002",
+    "description": "",
+    "status": "curious",
+    "sort_order": 4
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000008",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Human-Computer Interaction",
+    "parent_id": "c0000000-0000-4000-8000-000000000002",
+    "description": "",
+    "status": "curious",
+    "sort_order": 5
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000009",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "AI",
+    "parent_id": "c0000000-0000-4000-8000-000000000001",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000010",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Machine Learning / Deep Learning",
+    "parent_id": "c0000000-0000-4000-8000-000000000009",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000011",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "LLM & NLP",
+    "parent_id": "c0000000-0000-4000-8000-000000000009",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000012",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Agents",
+    "parent_id": "c0000000-0000-4000-8000-000000000009",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000013",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Multimodal & Generative AI",
+    "parent_id": "c0000000-0000-4000-8000-000000000009",
+    "description": "",
+    "status": "curious",
+    "sort_order": 3
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000014",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "World Models",
+    "parent_id": "c0000000-0000-4000-8000-000000000009",
+    "description": "",
+    "status": "curious",
+    "sort_order": 4
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000015",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Embodied AI",
+    "parent_id": "c0000000-0000-4000-8000-000000000009",
+    "description": "",
+    "status": "curious",
+    "sort_order": 5
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000016",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "AI Infra",
+    "parent_id": "c0000000-0000-4000-8000-000000000009",
+    "description": "",
+    "status": "curious",
+    "sort_order": 6
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000017",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "English",
+    "parent_id": "c0000000-0000-4000-8000-000000000001",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000018",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Speaking & Natural Expression",
+    "parent_id": "c0000000-0000-4000-8000-000000000017",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000019",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Listening",
+    "parent_id": "c0000000-0000-4000-8000-000000000017",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000020",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Reading in English",
+    "parent_id": "c0000000-0000-4000-8000-000000000017",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000021",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Writing in English",
+    "parent_id": "c0000000-0000-4000-8000-000000000017",
+    "description": "",
+    "status": "curious",
+    "sort_order": 3
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000022",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Language & Culture",
+    "parent_id": "c0000000-0000-4000-8000-000000000017",
+    "description": "",
+    "status": "curious",
+    "sort_order": 4
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000023",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Finance",
+    "parent_id": "c0000000-0000-4000-8000-000000000001",
+    "description": "",
+    "status": "curious",
+    "sort_order": 3
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000024",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Personal Finance",
+    "parent_id": "c0000000-0000-4000-8000-000000000023",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000025",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Investing",
+    "parent_id": "c0000000-0000-4000-8000-000000000023",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000026",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Financial Markets",
+    "parent_id": "c0000000-0000-4000-8000-000000000023",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000027",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Economics",
+    "parent_id": "c0000000-0000-4000-8000-000000000023",
+    "description": "",
+    "status": "curious",
+    "sort_order": 3
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000028",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Quantitative Finance",
+    "parent_id": "c0000000-0000-4000-8000-000000000023",
+    "description": "",
+    "status": "curious",
+    "sort_order": 4
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000029",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Art & Making",
+    "parent_id": "c0000000-0000-4000-8000-000000000001",
+    "description": "",
+    "status": "curious",
+    "sort_order": 4
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000030",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Digital Painting / 板绘",
+    "parent_id": "c0000000-0000-4000-8000-000000000029",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000031",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Visual Design",
+    "parent_id": "c0000000-0000-4000-8000-000000000029",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000032",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Crafts / 手作",
+    "parent_id": "c0000000-0000-4000-8000-000000000029",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000033",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Crochet / 钩织",
+    "parent_id": "c0000000-0000-4000-8000-000000000032",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000034",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Writing",
+    "parent_id": "c0000000-0000-4000-8000-000000000001",
+    "description": "",
+    "status": "curious",
+    "sort_order": 5
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000035",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Fiction",
+    "parent_id": "c0000000-0000-4000-8000-000000000034",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000036",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Character",
+    "parent_id": "c0000000-0000-4000-8000-000000000035",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000037",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Plot",
+    "parent_id": "c0000000-0000-4000-8000-000000000035",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000038",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Worldbuilding",
+    "parent_id": "c0000000-0000-4000-8000-000000000035",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000039",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Essays / Non-fiction",
+    "parent_id": "c0000000-0000-4000-8000-000000000034",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000040",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Journaling",
+    "parent_id": "c0000000-0000-4000-8000-000000000034",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000041",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Reading",
+    "parent_id": "c0000000-0000-4000-8000-000000000001",
+    "description": "",
+    "status": "curious",
+    "sort_order": 6
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000042",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Literature & Fiction",
+    "parent_id": "c0000000-0000-4000-8000-000000000041",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000043",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Philosophy & Ideas",
+    "parent_id": "c0000000-0000-4000-8000-000000000041",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000044",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "History & Society",
+    "parent_id": "c0000000-0000-4000-8000-000000000041",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000045",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Science & Technology",
+    "parent_id": "c0000000-0000-4000-8000-000000000041",
+    "description": "",
+    "status": "curious",
+    "sort_order": 3
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000046",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Essays / Biography / Non-fiction",
+    "parent_id": "c0000000-0000-4000-8000-000000000041",
+    "description": "",
+    "status": "curious",
+    "sort_order": 4
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000047",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Music",
+    "parent_id": "c0000000-0000-4000-8000-000000000001",
+    "description": "",
+    "status": "curious",
+    "sort_order": 7
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000048",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Piano",
+    "parent_id": "c0000000-0000-4000-8000-000000000047",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000049",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Classical Music",
+    "parent_id": "c0000000-0000-4000-8000-000000000047",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000050",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Music Appreciation",
+    "parent_id": "c0000000-0000-4000-8000-000000000049",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000051",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Music Theory",
+    "parent_id": "c0000000-0000-4000-8000-000000000047",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000052",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Film & Television",
+    "parent_id": "c0000000-0000-4000-8000-000000000001",
+    "description": "",
+    "status": "curious",
+    "sort_order": 8
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000053",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Film",
+    "parent_id": "c0000000-0000-4000-8000-000000000052",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000054",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Television",
+    "parent_id": "c0000000-0000-4000-8000-000000000052",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000055",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Animation",
+    "parent_id": "c0000000-0000-4000-8000-000000000052",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000056",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Film Appreciation / Criticism",
+    "parent_id": "c0000000-0000-4000-8000-000000000052",
+    "description": "",
+    "status": "curious",
+    "sort_order": 3
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000057",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Games",
+    "parent_id": "c0000000-0000-4000-8000-000000000001",
+    "description": "",
+    "status": "curious",
+    "sort_order": 9
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000058",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Playing / Game Experiences",
+    "parent_id": "c0000000-0000-4000-8000-000000000057",
+    "description": "",
+    "status": "curious",
+    "sort_order": 0
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000059",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Game Design",
+    "parent_id": "c0000000-0000-4000-8000-000000000057",
+    "description": "",
+    "status": "curious",
+    "sort_order": 1
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000060",
+    "owner_id": "4dde6af0-2fd6-4520-86a7-8241acb9c180",
+    "name": "Game Art & Worlds",
+    "parent_id": "c0000000-0000-4000-8000-000000000057",
+    "description": "",
+    "status": "curious",
+    "sort_order": 2
+  }
+]

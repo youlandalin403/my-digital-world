@@ -1,0 +1,17 @@
+# Source configuration only; no deployment has been performed.
+project_id = "my-digital-world"
+
+# Public guests do not have Auth JWTs. Owner routes validate JWTs with Auth.getUser
+# inside the handler; gateway verification is disabled consistently for publishable keys.
+[functions.create-invitation]
+verify_jwt = false
+[functions.list-invitations]
+verify_jwt = false
+[functions.revoke-invitation]
+verify_jwt = false
+[functions.redeem-invitation]
+verify_jwt = false
+[functions.validate-room-session]
+verify_jwt = false
+[functions.revoke-room-session]
+verify_jwt = false

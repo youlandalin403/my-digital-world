@@ -1,0 +1,53 @@
+// World units are approximately metres. The building front faces +Z.
+export const WORLD_CONFIG = {
+  camera: {
+    duration: 3,
+    pause: 0.5,
+    enterDuration: 1,
+    fov: 49,
+    portraitFov: 68,
+    portraitRetreat: 18,
+    path: [
+      [-9, 2.5, 53],
+      [-6, 2.7, 46],
+      [-2, 2.9, 39],
+      [2.5, 3.1, 31],
+      [4, 3.4, 24],
+    ],
+    targets: [
+      [-4, 5, 25],
+      [0, 6, 2],
+      [-1, 7, -7],
+      [0, 8, -8],
+      [0, 9.2, -9],
+    ],
+    enterPosition: [1, 3.2, 14],
+    enterTarget: [0, 7, -8],
+  },
+  colors: {
+    sky: "#cbd8d6",
+    stone: "#efeee4",
+    stoneDark: "#b8bbaa",
+    ground: "#687259",
+    path: "#aaa58d",
+    bark: "#525344",
+    leaves: ["#40553a", "#586d48", "#73865b", "#8b9a6c"],
+  },
+  fog: { near: 42, far: 135 },
+  lighting: { sun: [-28, 40, 24], intensity: 3.1, ambient: 1.65 },
+  building: {
+    scale: 1,
+    position: [0, 0, -12],
+    width: 30,
+    height: 20,
+    entranceWidth: 7,
+  },
+  vegetation: {
+    seed: 731,
+    trees: 76,
+    grass: 75000,
+    leavesPerTree: 115,
+    wind: 0.075,
+  },
+  performance: { dpr: [1, 1.5], shadowSize: 2048 },
+};

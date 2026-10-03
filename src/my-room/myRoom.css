@@ -1,0 +1,29 @@
+.my-room { height: 100dvh; overflow: auto; background: #e9e8df; color: #293a31; padding: 20px; font-family: system-ui, sans-serif; }
+.my-room header { display: flex; align-items: center; gap: 24px; }
+.my-room h1 { font-size: 24px; }
+.my-room button, .room-back { cursor: pointer; border: 1px solid #7c897d; border-radius: 6px; padding: 9px 13px; background: #faf9f2; color: #293a31; }
+.my-room button:disabled { opacity: .5; cursor: default; }
+.room-invitations { padding: 12px 0; }
+.room-invitations input { width: min(100%, 680px); display: block; margin: 8px 0; }
+.room-invitations button { margin: 4px; }
+.room-invitations li { margin: 8px 0; }
+.my-room label { display: flex; flex-direction: column; gap: 5px; }
+.my-room input, .my-room textarea { border: 1px solid #7c897d; border-radius: 4px; padding: 9px; font: inherit; color: inherit; background: #fffef7; min-width: 0; }
+.room-access form, .diary-navigation { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.room-scene { height: min(65dvh, 700px); min-height: 320px; position: relative; }
+.room-feedback span { display: block; margin-top: 8px; }
+.diary-editor { max-width: 820px; margin: 0 auto; }
+.diary-editor form { display: grid; gap: 16px; margin-top: 20px; }
+.diary-editor textarea { resize: vertical; }
+.diary-editor [role=alert], .my-room [role=alert] { color: #8b302c; }
+@media(max-width: 600px) { .my-room { padding: 12px; } .my-room header { gap: 14px; } .room-access input { width: 100%; } .room-access label { max-width: 100%; } }
+
+.room-entry { position: absolute; bottom: 20px; left: 0; right: 0; display: flex; align-items: center; flex-direction: column; gap: 8px; }
+.room-entry span { background: #faf9f2e8; padding: 5px 10px; font-size: 13px; }
+.room-reticle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; color: white; text-shadow: 0 1px 3px #000; font-size: 18px; }
+.room-prompt { position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%); margin: 0; padding: 8px 14px; background: #faf9f2e8; border-radius: 4px; pointer-events: none; white-space: nowrap; }
+.room-overlay { width: min(900px, calc(100vw - 32px)); max-width: none; height: min(850px, calc(100dvh - 40px)); max-height: none; overflow: auto; border: 1px solid #7c897d; border-radius: 6px; padding: 24px; background: #e9e8df; color: #293a31; font-family: system-ui, sans-serif; }
+.room-overlay::backdrop { background: #14221980; }
+.room-overlay .guestbook-page { position: relative; inset: auto; height: auto; overflow: visible; padding: 0; background: transparent; }
+.room-overlay .guestbook-page h1 { margin-top: 18px; }
+@media(max-width: 600px) { .room-overlay { padding: 16px; width: calc(100vw - 16px); } }

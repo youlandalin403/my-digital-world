@@ -1,0 +1,179 @@
+Scanned 249 Errors []
+[
+  {
+    file: 'Furniture Pack-glb/Bed Double.glb',
+    min: [ -2.125113990157847, -0.011820959301653014, -1.4251229206441103 ],
+    size: [ 2.82586496323348, 1.557531109658344, 4.258533258165757 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Bed Twin.glb',
+    min: [ -1.0292108617723024, -0.011820959301653014, -1.5294762889264282 ],
+    size: [ 2.0608855411410403, 1.557531109658344, 4.258533258165757 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Bookcase with Books.glb',
+    min: [ -0.9167337883263829, -0.018219390855225538, -0.2865495871839401 ],
+    size: [ 1.841935515403748, 3.371304692025261, 0.6644057837902515 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Chair-9kIjuRFMFw.glb',
+    min: [ -0.816592667251825, -0.008801237815951558, -0.6943613006125349 ],
+    size: [ 1.637953519821167, 1.3601476464494031, 1.4383128626398216 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Chair.glb',
+    min: [ -0.253624492324889, -0.006554224222411601, -0.36546805823052375 ],
+    size: [ 0.507249007932842, 1.0663279743814578, 0.632144655662277 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Closet.glb',
+    min: [ -0.7769400142133233, -0.007872697586849933, -0.4302091250039422 ],
+    size: [ 1.552502624690532, 2.9775091090133756, 0.8700102696714846 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Desk.glb',
+    min: [
+      -0.911151431500912,
+      -0.0007023370042261008,
+      -0.45240881513559467
+    ],
+    size: [ 1.822302863001824, 0.9224989932124698, 0.8466270522136515 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Door-JuTzNjtD54.glb',
+    min: [ -0.811692528426647, 0.01518248029040129, -0.15399498707202325 ],
+    size: [ 1.59430019557476, 3.081392340334296, 0.3199320031433751 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Door-QiMLelTBId.glb',
+    min: [ -0.877841126173734, 0.015182784363567459, -0.15399498901022277 ],
+    size: [ 1.748615456745028, 3.1398056353200863, 0.31993200701977415 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Door.glb',
+    min: [ -0.8778410963714119, 0.015182712090887392, -0.15530829499651844 ],
+    size: [ 1.7486155033111568, 3.1398057899120877, 0.32716919988877013 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Night Stand.glb',
+    min: [
+      -0.29385474044829596,
+      -0.002340029032691441,
+      -0.25332580709735875
+    ],
+    size: [ 0.5877094808965919, 0.5117394075416841, 0.5066515298435637 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Office Chair.glb',
+    min: [ -0.361205358058214, 0.00009059754912518799, -0.4418773077825254 ],
+    size: [ 0.7216703146696091, 1.1275621577821824, 0.8072056848080518 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Short Closet.glb',
+    min: [
+      -0.7759570740163323,
+      -0.007872713593956136,
+      -0.43016404103161365
+    ],
+    size: [ 1.552502624690532, 2.2666960069913245, 0.9067560159002479 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Sofa-X5kQPKzAWp.glb',
+    min: [ -2.02019121497869, -0.01761167836056178, -0.648844878328227 ],
+    size: [ 4.00264672935009, 1.4524261964718668, 2.8011893725493917 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Sofa-vuo7KBehok.glb',
+    min: [ -2.01583712548018, -0.03869357133889059, -0.6694273062566832 ],
+    size: [ 4.0026467293501, 1.452425961646252, 1.5408184217033258 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Sofa.glb',
+    min: [ -2.12051998823881, -0.007570276817335001, -0.9010352038922469 ],
+    size: [ 4.24103997647762, 1.5077837696627976, 1.7836647351283625 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Stool.glb',
+    min: [ -0.253624492324889, -0.006554210948922523, -0.2666766675005281 ],
+    size: [ 0.507249007932842, 0.5768140247404657, 0.5333532649322814 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Table-yYEEJzKxb4.glb',
+    min: [ -0.7091507781296971, 0.0008580197434982106, -1.3901128135352865 ],
+    size: [ 1.4183015562593941, 0.8244290747969774, 2.7802254172623444 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Furniture Pack-glb/Table.glb',
+    min: [ -0.709150871261954, 0.0008580071221903518, -1.3901128135352865 ],
+    size: [ 1.418301742523908, 0.8244290874182852, 2.780225516070659 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Ultimate House Interior Pack-glb/Bed Single.glb',
+    min: [ -0.966569222509861, -2.6468692177786193e-7, -1.9699999345628658 ],
+    size: [ 1.979145035147671, 1.354575360777461, 3.939999687126601 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Ultimate House Interior Pack-glb/Dead Houseplant.glb',
+    min: [ -0.284777069464326, 0.0014194739027618471, -0.2635789266765688 ],
+    size: [ 0.517148151993752, 1.5565971840411377, 0.5171335693744632 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Ultimate House Interior Pack-glb/Houseplant.glb',
+    min: [
+      -0.12527533108368502,
+      0.0010514371330044988,
+      -0.12527535877674073
+    ],
+    size: [ 0.25055066216737004, 0.3848919882923751, 0.25055068543116077 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Ultimate House Interior Pack-glb/Light Floor.glb',
+    min: [
+      -0.20012329332530499,
+      -2.878856118694736e-8,
+      -0.2104235545446246
+    ],
+    size: [ 0.40024658665060997, 0.8941973824092154, 0.4208442436481843 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Ultimate House Interior Pack-glb/Round Rug.glb',
+    min: [ -1.24636711552739, -3.039649522903038e-7, -1.2655939494783688 ],
+    size: [ 2.49273283407092, 0.015736351438845553, 2.5311872449167137 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Ultimate House Interior Pack-glb/Rug.glb',
+    min: [ -1.05819450691342, -0.0008667807645981442, -1.5559695176571193 ],
+    size: [ 2.13123047724366, 0.036658443129873076, 3.093209016700262 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  },
+  {
+    file: 'Ultimate House Interior Pack-glb/Table Lamp.glb',
+    min: [ -0.175364210736006, -6.041957633060133e-8, -0.17536667050046087 ],
+    size: [ 0.350733136292546, 0.7631500830192317, 0.3507332384649625 ],
+    metadata: { generator: 'FBX2glTF v0.9.7', version: '2.0' }
+  }
+]
