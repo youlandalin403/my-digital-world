@@ -16,6 +16,14 @@ export default function MyRoom() {
   const owner = isOwner(session);
   const visit = useGuestVisit(owner, ready);
   const allowed = owner || visit.valid;
+  const [farewell, setFarewell] = useState(false);
+  const [arrival, setArrival] = useState(false);
+  useEffect(() => {
+    if (!visit.valid || owner) return;
+    setArrival(true);
+    const timer = setTimeout(() => setArrival(false), 4500);
+    return () => clearTimeout(timer);
+  }, [visit.valid, owner]);
   useEffect(() => {
     if (!allowed) { setView('room'); if (document.pointerLockElement) document.exitPointerLock(); }
   }, [allowed]);
@@ -40,10 +48,21 @@ export default function MyRoom() {
     if (document.pointerLockElement) document.exitPointerLock();
   }
   const close = () => { setView('room'); document.title = 'My Room | Yunhan Lin'; };
+  if (farewell && !owner) return <main className="my-room room-invitation">
+    <section className="invitation-paper" aria-labelledby="farewell-title">
+      <p className="invitation-eyebrow">Until another time</p>
+      <h1 id="farewell-title" tabIndex={-1} ref={node => node?.focus()}>Thanks for visiting.</h1>
+      <p>The invitation has been used.</p>
+      <p role="status">{visit.leaving ? 'Closing your visit…' : visit.retryLeave ? '' : 'Your visit has ended.'}</p>
+      {visit.error && <p role="alert">{visit.error}</p>}
+      {visit.retryLeave && <button disabled={visit.leaving} onClick={visit.leave}>Retry ending visit</button>}
+      <a className="farewell-return" href="/map" onClick={followLocalLink}>Return to the public world</a>
+    </section>
+  </main>;
   return <main className="my-room">
     <header><a href="/map" onClick={followLocalLink}>← World map</a><h1>My Room</h1>
       {owner && <button disabled={pending} onClick={() => authenticate(signOut)}>Sign out</button>}
-      {!owner && (visit.valid || visit.retryLeave) && <button disabled={visit.leaving} onClick={visit.leave}>{visit.retryLeave ? 'Retry ending visit' : 'Leave Room'}</button>}
+      {!owner && (visit.valid || visit.retryLeave) && <button disabled={visit.leaving} onClick={() => { setFarewell(true); visit.leave(); }}>{visit.retryLeave ? 'Retry ending visit' : 'Leave Room'}</button>}
     </header>
     {!ready || (!owner && visit.checking) ? <p role="status">Checking room access…</p> : <>
       {!allowed && <section className="room-access"><p>My Room is locked. Use a Guest Pass invitation or sign in as owner.</p>
@@ -55,6 +74,7 @@ export default function MyRoom() {
       {visit.error && <p role="alert">{visit.error}</p>}
       {owner && <details><summary>Manage Guest Pass invitations</summary><GuestPassManager /></details>}
       {allowed && <>
+        <div className="room-arrival" aria-live="polite">{arrival && !owner ? 'Welcome. Stay a while.' : ''}</div>
         <RoomExperience canOpenDiary={owner} suspended={view !== 'room'} tea={tea} drinkTea={() => { setTea(value => Math.max(0, value - 1)); setNotice(''); }} openDiary={() => open('diary')} openGuestbook={() => open('guestbook')} />
         <p className="room-feedback" aria-live="polite">{notice} <span data-testid="tea-state">{['The cup is empty.', 'Half a cup left.', 'The tea is still warm.'][tea]}</span></p>
       </>}

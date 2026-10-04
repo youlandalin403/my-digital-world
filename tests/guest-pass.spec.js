@@ -21,7 +21,7 @@ test('preview is inert; explicit click redeems once, fragment is removed, refres
   await page.reload(); await expect(page.getByRole('button', { name: 'Leave Room' })).toBeVisible();
   expect(state.calls.filter(c => c.action === 'validate-room-session').length).toBeGreaterThan(validations);
   await page.getByRole('button', { name: 'Leave Room' }).click();
-  await expect(page.getByText('My Room is locked.', { exact: false })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Thanks for visiting.' })).toBeVisible();
   expect(state.valid).toBe(false); expect(await page.evaluate(key => sessionStorage.getItem(key), sessionKey)).toBe(null);
   await expect(page.locator('canvas')).toHaveCount(0);
   await page.goto(`/room/invite#${invitationToken}`); await page.getByRole('button', { name: 'Enter My Room' }).click();
@@ -68,7 +68,7 @@ test('unavailable validation never unlocks; unavailable tab storage never consum
   await page.goto(`/room/invite#${invitationToken}`);
   await page.evaluate(() => { Storage.prototype.setItem = () => { throw new Error('disabled'); }; });
   await page.getByRole('button', { name: 'Enter My Room' }).click();
-  await expect(page.getByRole('alert')).toContainText('Enable browser session storage');
+  await expect(page.getByRole('alert')).toContainText('Allow browser storage');
   expect(state.calls.filter(c => c.action === 'redeem-invitation')).toHaveLength(0);
 });
 test('owner enters without Guest Pass, generates a link once, lists metadata and revokes', async ({ page }) => {
@@ -89,4 +89,73 @@ test('owner enters without Guest Pass, generates a link once, lists metadata and
   await page.getByRole('button', { name: 'Revoke', exact: true }).click();
   await expect(page.getByRole('region', { name: 'Guest Pass invitations' })).toContainText('revoked');
   expect(state.calls.filter(c => c.action === 'validate-room-session')).toHaveLength(0);
+});
+
+
+test('expired and revoked invitations are final; transient errors can retry', async ({ page }) => {
+  const state = await installGuestPass(page);
+  for (const status of ['expired', 'revoked']) {
+    state.invitationStatus = status; await page.goto('about:blank');
+    await page.goto(`/room/invite#${invitationToken}`);
+    await page.getByRole('button', { name: 'Enter My Room' }).click();
+    await expect(page.locator('main')).toHaveAttribute('data-state', 'unavailable');
+    await expect(page.getByRole('button', { name: 'Enter My Room' })).toHaveCount(0);
+    await expect(page.getByRole('link', { name: 'Return to the public world' })).toBeVisible();
+  }
+  await page.goto('about:blank'); await page.goto('/room/invite');
+  await expect(page.locator('main')).toHaveAttribute('data-state', 'unavailable');
+  expect(state.calls.filter(c => c.action === 'redeem-invitation')).toHaveLength(2);
+  await page.goto('about:blank');
+  await page.route('**/functions/v1/redeem-invitation', route => route.fulfill({ status: 503, body: '{}' }));
+  await page.goto(`/room/invite#${invitationToken}`);
+  await page.getByRole('button', { name: 'Enter My Room' }).click();
+  await expect(page.locator('main')).toHaveAttribute('data-state', 'error');
+  await expect(page.getByRole('button', { name: 'Enter My Room' })).toBeEnabled();
+});
+
+test('mobile invitation supports keyboard, pending feedback and reduced motion', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 640 });
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  const state = await installGuestPass(page);
+  await page.goto(`/room/invite#${invitationToken}`);
+  await expect(page.getByRole('heading', { name: 'You are invited' })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect(await page.locator('.invitation-paper').evaluate(el => getComputedStyle(el).transitionDuration)).toBe('0s');
+  await page.keyboard.press('Tab');
+  await expect(page.getByRole('button', { name: 'Enter My Room' })).toBeFocused();
+  await page.keyboard.press('Enter');
+  await expect(page).toHaveURL(/\/room$/);
+  await expect(page.getByText('Welcome. Stay a while.', { exact: true })).toBeVisible();
+  expect(state.calls.filter(c => c.action === 'redeem-invitation')).toHaveLength(1);
+});
+
+test('success removes the fragment and stores the visit before the transition', async ({ page }) => {
+  await installGuestPass(page);
+  await page.goto(`/room/invite#${invitationToken}`);
+  await page.getByRole('button', { name: 'Enter My Room' }).click();
+  await expect(page.locator('main')).toHaveAttribute('data-state', 'success');
+  expect(new URL(page.url()).hash).toBe('');
+  expect(await page.evaluate(key => sessionStorage.getItem(key), sessionKey)).toBe(visitToken);
+  await expect(page.getByRole('button', { name: 'Entering…' })).toBeDisabled();
+  await expect(page).toHaveURL(/\/room$/);
+});
+
+test('slow redemption disables repeated activation and announces progress', async ({ page }) => {
+  const state = await installGuestPass(page);
+  let release;
+  const gate = new Promise(resolve => { release = resolve; });
+  await page.route('**/functions/v1/redeem-invitation', async route => { await gate; await route.fallback(); });
+  await page.goto(`/room/invite#${invitationToken}`);
+  await expect(page.getByRole('heading', { name: 'You are invited' })).toBeVisible();
+  await page.screenshot({ path: 'test-results/invitation-desktop.png' });
+  await page.setViewportSize({ width: 320, height: 640 });
+  await page.screenshot({ path: 'test-results/invitation-mobile.png' });
+  await page.getByRole('button', { name: 'Enter My Room' }).click();
+  await expect(page.locator('main')).toHaveAttribute('data-state', 'redeeming');
+  await expect(page.getByRole('status')).toHaveText('Opening your invitation…');
+  await expect(page.getByRole('button', { name: 'Entering…' })).toBeDisabled();
+  await page.getByRole('button', { name: 'Entering…' }).evaluate(el => { el.click(); el.click(); });
+  release();
+  await expect(page).toHaveURL(/\/room$/);
+  expect(state.calls.filter(c => c.action === 'redeem-invitation')).toHaveLength(1);
 });
